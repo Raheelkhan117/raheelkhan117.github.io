@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import api from '../api';
 import YouTube from 'react-youtube';
 
@@ -7,7 +7,7 @@ function MovieDetail() {
   const { id } = useParams();
   const [movie, setMovie] = useState(null);
   const [watchlistMessage, setWatchlistMessage] = useState('');
-  const playerRef = useRef(null);
+
 
   useEffect(() => {
     const fetchMovie = async () => {
