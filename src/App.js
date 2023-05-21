@@ -1,30 +1,32 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Home from './components/Home';
+import MovieDetail from './components/MovieDetail';
+import Watchlist from './components/Watchlist';
 import './App.css';
-import { useEffect, useState } from "react";
-import  axios  from "axios";
-import { MovieCard } from './components/MovieCard/moviecard';
+
 function App() {
-  const [movies, setMovies ] = useState([]);
-  const getMovies = async() => {
-try{
-const { data } = await axios.get("https://movies-app.prakashsakari.repl.co/api/movies");
-setMovies(data);
-}
-catch(err){
-  console.log(err);
-}
-}
-useEffect(() => {
-getMovies();
-},[])
   return (
-    <div className="App">
-     
-     <header className='header'><h1 className='heading_1'>Movies</h1>
-     </header>
-     <main className='main'>{ movies && movies.length>0 && movies.map(movie => <MovieCard key = {movie.id} movie ={movie} />)
-      }</main>
-     
-    </div>
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">HOME</Link>
+            </li>
+            <li>
+              <Link to="/watchlist">WATCHLIST</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/movie/:id" element={<MovieDetail />} />
+          <Route path="/watchlist" element={<Watchlist />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
