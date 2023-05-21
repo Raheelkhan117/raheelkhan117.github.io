@@ -6,7 +6,6 @@ function Home() {
   const [movies, setMovies] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
-  const [watchlist, setWatchlist] = useState([]);
 
   useEffect(() => {
     const fetchMovies = async () => {
@@ -36,10 +35,6 @@ function Home() {
     } catch (error) {
       console.error('Error searching movies:', error);
     }
-  };
-
-  const handleAddToWatchlist = movie => {
-    setWatchlist(prevWatchlist => [...prevWatchlist, movie]);
   };
 
   const moviesToDisplay = searchResults.length > 0 ? searchResults : movies;
