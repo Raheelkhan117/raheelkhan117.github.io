@@ -28,7 +28,7 @@ function Watchlist() {
                 onClick={() => removeFromWatchlist(movie.id)}
                 disabled={removedMovie === movie.id}
               >
-                {removedMovie === movie.id ? 'Removed' : 'Remove from Watchlist'}
+                {removedMovie === movie.id ? 'Removed' : 'Remove'}
               </button>
             </div>
           ))}
