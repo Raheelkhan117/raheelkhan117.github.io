@@ -10,7 +10,7 @@ function Watchlist() {
     setWatchlist(updatedWatchlist);
     setRemovedMovie(id);
   };
-
+  
   return (
     <div className="container">
       <h1>Watchlist</h1>

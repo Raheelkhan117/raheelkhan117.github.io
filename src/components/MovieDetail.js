@@ -62,6 +62,7 @@ function MovieDetail() {
         <div className="details">
           <p>Duration: {movie.runtime} mins</p>
           <p>Genre: {movie.genres.map(genre => genre.name).join(', ')}</p>
+          <p>Ratings: {movie.vote_average}</p>
         </div>
         <p>{movie.overview}</p>
         <button className="trailer-btn" onClick={handlePlayTrailer}>
