@@ -10,7 +10,7 @@ export default function Home() {
           Hi, I’m building a dark-themed portfolio and blog using Next.js.
           Stay tuned for more posts and projects!
         </p>
-        <p className="text-sm text-neutral-500 font-mono">
+        <p className="text-lg text-[var(--foreground)] mb-6 max-w-xl">
           Find me on <a href="https://github.com/Raheelkhan117" className="underline">GitHub</a>
         </p>
       </main>
