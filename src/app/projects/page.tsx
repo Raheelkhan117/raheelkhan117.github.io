@@ -3,15 +3,20 @@ import Link from "next/link"
 
 const posts = [
   {
-    slug: "my-first-post",
-    title: "Automating Daily Email Reminders with PowerShell: A Beginner’s Guide",
+    slug: "my-first-project",
+    title: "My First Project",
     date: "2024-04-20",
-    excerpt: "Beginners friendly powershell automation on windows",
+    excerpt: "This is my first project on my minimal portfolio site built with Next.js!",
   },
-  
+  {
+    slug: "my-second-project",
+    title: "My Second Project",
+    date: "2024-04-21",
+    excerpt: "This is the second project",
+  },
 ]
 
-export default function BlogPage() {
+export default function ProjectsPage() {
   return (
     <>
       <NavBar />
@@ -20,7 +25,7 @@ export default function BlogPage() {
         <ul className="space-y-6">
           {posts.map((post) => (
             <li key={post.slug} className="border-b border-neutral-700 pb-4">
-              <Link href={`/blog/${post.slug}`}>
+              <Link href={`/projects/${post.slug}`}>
                 <h2 className="text-xl text-green-400 hover:underline font-mono">{post.title}</h2>
               </Link>
               <p className="text-lg text-[var(--foreground)] mb-6 max-w-xl">{post.date}</p>
