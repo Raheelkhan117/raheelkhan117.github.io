@@ -18,7 +18,6 @@ export default function NavBar() {
         </div>
         <ul className="flex gap-6 text-sm font-mono text-green-400">
           <li><Link href="/">Home</Link></li>
-          <li><Link href="/about">About</Link></li>
           <li><Link href="/blog">Blog</Link></li>
           <li><Link href="/projects">Projects</Link></li>
         </ul>
