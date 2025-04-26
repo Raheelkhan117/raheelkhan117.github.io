@@ -20,7 +20,10 @@ export default function Home() {
 >
   View My Resume 📄
 </a>
-
+<p className="text-lg text-[var(--foreground)] mb-6 ">
+       This site is still under construction. 🚧 <br></br>
+       Projects/blogs section will be updated soon.
+        </p>
 
       </main>
     </>
