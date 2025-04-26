@@ -4,9 +4,9 @@ import Link from "next/link"
 const posts = [
   {
     slug: "my-first-project",
-    title: "My First Project",
+    title: "Automating Daily Email Reminders with PowerShell!",
     date: "2024-04-20",
-    excerpt: "This is my first project on my minimal portfolio site built with Next.js!",
+    excerpt: "Used powershell scripting automation for daily email reminders.",
   },
   {
     slug: "my-second-project",
