@@ -53,13 +53,10 @@ Send-MailMessage -From $EmailFrom -To $EmailTo -Subject $Subject -Body $Body -Sm
 
         <h2 className="text-2xl font-bold font-mono mb-4">Why It’s Great for Beginners</h2>
         <p className="text-lg text-[var(--foreground)] mb-6">
-          This project is a simple intro to PowerShell automation, with no need for third-party apps. Customize it to add attachments or send system reports.
+          This project is a simple intro to PowerShell automation, with no need for third-party apps. Can be customised to add attachments or send system reports.
         </p>
 
-        <h2 className="text-2xl font-bold font-mono mb-4">Next Steps</h2>
-        <p className="text-lg text-[var(--foreground)] mb-6">
-          Add more features like attachments or system health reports to expand your automation skills.
-        </p>
+        
 
         <p className="text-sm text-[var(--foreground)] mb-6 max-w-xl">Posted on April 20, 2024</p>
       </main>
