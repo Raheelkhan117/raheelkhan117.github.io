@@ -5,9 +5,8 @@
   "scripts": {
   "dev": "next dev",
   "build": "next build",
-  "postbuild": "shx touch out/.nojekyll",
   "predeploy": "npm run build",
-  "deploy": "gh-pages -d out"
+  "deploy": "gh-pages -d out -t true"
 },
   "dependencies": {
     "gray-matter": "^4.0.3",
